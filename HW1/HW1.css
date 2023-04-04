@@ -1,0 +1,41 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: rgb(230, 238, 255);
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 12px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  border-bottom: 1px solid black;
+  margin-bottom: 0px;
+}
+
+div2 {
+  line-height: 10px;
+}
+.column {
+  float: left;
+}
+.column2 {
+  float: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
