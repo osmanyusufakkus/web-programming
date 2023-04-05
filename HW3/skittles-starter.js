@@ -20,6 +20,8 @@
     // 3.2. Update textContent of #count to include length of green skittles collection from 1.
     document.getElementById("count").textContent = qsa(".skittle.green").length;
     // 3.3. Show p tag.
+    //id("game-play").classList.add("hidden");
+    qs("p").classList.remove("hidden");
   }
 
   // Part 4: Planning out the populating of skittles in the jar (we'd eventually like
@@ -27,11 +29,11 @@
   function fillJar() {
     // Create and add one "test" skittle (a div element with the classes ".skittle" and ".green")
     // 4.1. (no code) What function do we use to create a new DOM element?
-    document.createElement("div");
+    const deneme = document.createElement("div");
     // 4.2. (no code) What function do we use to add two classes?
-    document.createElement("div").classList.add("skittle", getRandomColor());
+    deneme.classList.add("skittle", getRandomColor());
     // 4.3. (no code) What function ddo we use to append one DOM element as a "child" to a parent DOM element?
-    document.getElementById("jar").appendChild(document.createElement("div"));
+    document.querySelector("#jar").appendChild(deneme);
   }
 
   // Part 5: Get a random color for a skittle (we'll add more colors soon!)
